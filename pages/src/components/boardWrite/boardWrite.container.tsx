@@ -120,6 +120,10 @@ export default function BoardWrite(props){
         console.log(fileUrls)
 }
 
+  const onClickCancel = () =>{
+    router.back()
+  }
+
 
 
 //이미지
@@ -139,6 +143,7 @@ export default function BoardWrite(props){
         onChangContents={onChangContents}
         onClickSubmit={onClickSubmit}
         onChangeFileUrls={onChangeFileUrls}
+        onClickCancel={onClickCancel}
         fileUrls={fileUrls}
         isEdit={props.isEdit}
         onClickEdit={onClickEdit}

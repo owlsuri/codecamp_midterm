@@ -43,7 +43,7 @@ export default function BoardWriteUI(props){
             <S.MenuBox>
                 <S.SubmitBtn onClick={props.isEdit ? props.onClickEdit : props.onClickSubmit}>
                     {props.isEdit ? "수정" : "등록"}</S.SubmitBtn>
-                <S.CancelBtn>취소</S.CancelBtn>
+                <S.CancelBtn onClick={props.onClickCancel}>취소</S.CancelBtn>
             </S.MenuBox>    
 
         </S.Wrapper>
